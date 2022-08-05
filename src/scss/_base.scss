@@ -14,12 +14,11 @@ h2,
 h3 {
   font-family: map-get($map: var.$font-families, $key: primary);
   font-weight: map-get($map: var.$font-weights, $key: primary);
-  color: var.$clr-primary-dark;
+  color: inherit;
 }
 
 h1 {
   font-size: map-get($map: var.$font-sizes, $key: s1);
-  color: var.$clr-primary-light;
   text-transform: uppercase;
   text-align: start;
   line-height: 1;

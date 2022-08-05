@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as var;
+
+.card {
+    padding: 1.3em 1.5em;
+
+    @at-root &_txt-light {
+        color: var.$clr-primary-light;
+    }
+    @at-root &_txt-dark {
+        color: var.$clr-primary-dark;
+    }
+    @at-root &_bordered {
+        border: 2px solid currentColor;
+    }
+}
