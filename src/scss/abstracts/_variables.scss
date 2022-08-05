@@ -1,21 +1,27 @@
 /*-------------------------------
             COLORS
 ---------------------------------*/
-$clr-primary: green;
-$clr-accent: red;
-$clr-neutral: yellow;
+$clr-primary-light: hsl(0, 0%, 100%);
+$clr-primary-dark: hsl(0, 0%, 0%);
+$clr-neutral-mid: hsl(0, 0%, 55%);
+$clr-neutral-dark: hsl(0, 0%, 41%);
 
 /*-------------------------------
             TYPOGRAPHY
 ---------------------------------*/
-$font-stack: "Epilogue", sans-serif;
+$font-families: (
+  primary: 'Josefin Sans', sans-serif,
+  neutral: 'Alata', sans-serif,
+);
 $font-sizes: (
-  primary: 2rem,
-  neutral: 1rem,
+  s1: 2rem,
+  s2: 1.5rem,
+  s3: 1.2rem,
+  neutral: 0.9375rem,
 );
 $font-weights: (
-  primary: 700,
-  neutral: 500,
+  primary: 300,
+  neutral: 400,
 );
 
 /*-------------------------------
