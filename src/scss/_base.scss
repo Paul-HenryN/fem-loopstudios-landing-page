@@ -5,6 +5,8 @@ body {
   font-family: map-get($map: var.$font-families, $key: neutral);
   font-size: map-get($map: var.$font-sizes, $key: neutral);
   font-weight: map-get($map: var.$font-weights, $key: neutral);
+  color: var.$clr-neutral-mid;
+  text-align: center;
 }
 
 h1,
@@ -18,6 +20,9 @@ h3 {
 h1 {
   font-size: map-get($map: var.$font-sizes, $key: s1);
   color: var.$clr-primary-light;
+  text-transform: uppercase;
+  text-align: start;
+  line-height: 1;
 }
 h2 {
   font-size: map-get($map: var.$font-sizes, $key: s2);
