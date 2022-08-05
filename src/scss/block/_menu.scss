@@ -2,20 +2,32 @@
 @use "../abstracts/mixins" as mix;
 
 .menu {
-    @include mix.flexRow(center, center);
-    column-gap: 40px;
+  @include mix.flexRow(center, center);
+  column-gap: 40px;
 
-    @at-root .menu__item {
-        color: var.$clr-primary-light;
+  @at-root .menu__item {
+    color: var.$clr-primary-light;
+    @include mix.flexCol(center, center);
+    row-gap: 4px;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 4px;
+      border-radius: 1px;
+
+      transition: transform 0.1s ease;
     }
+    
+  }
 
-    @at-root .menu__link,
+  @at-root .menu__link,
     .menu__link:link,
     .menu__link:visited,
     .menu__link:hover,
     .menu__link:focus,
     .menu__link:active {
-        color: var.$clr-primary-light;
-        text-decoration: none;
-    }
+    color: inherit;
+    text-decoration: none;
+  }
 }
