@@ -139,6 +139,10 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
+.nav__logo {
+  width: clamp(110px, 40%, 160px);
+}
+
 .nav__menu {
   display: none;
 }

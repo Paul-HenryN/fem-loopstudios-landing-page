@@ -4,6 +4,10 @@
     width: 100%;
     @include mix.flexRow(center, space-between);
 
+    @at-root .nav__logo {
+        width: clamp(110px, 40%, 160px);
+    }
+
     @at-root .nav__menu {
         display: none;
     }
