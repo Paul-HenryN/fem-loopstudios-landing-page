@@ -10,8 +10,8 @@ $clr-neutral-dark: hsl(0, 0%, 41%);
             TYPOGRAPHY
 ---------------------------------*/
 $font-families: (
-  primary: 'Josefin Sans', sans-serif,
-  neutral: 'Alata', sans-serif,
+  primary: ('Josefin Sans', sans-serif),
+  neutral: ('Alata', sans-serif),
 );
 $font-sizes: (
   s1: 2rem,

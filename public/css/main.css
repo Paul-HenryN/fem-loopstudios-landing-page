@@ -19,12 +19,10 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with class attribute */
-ul[class],
-ol[class] {
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 /* Set core root defaults */
@@ -72,6 +70,42 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+/*-------------------------------
+            COLORS
+---------------------------------*/
+/*-------------------------------
+            TYPOGRAPHY
+---------------------------------*/
+/*-------------------------------
+            BREAKPOINTS
+---------------------------------*/
+body {
+  background-color: white;
+  font-family: "Alata", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 0%);
+}
+
+h1 {
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
