@@ -172,6 +172,15 @@ h3 {
   }
 }
 
+@media (min-width: 1024px) {
+  .nav__menu {
+    display: flex;
+  }
+  .nav__menu-toggle {
+    display: none;
+  }
+}
+
 .header {
   height: 80vh;
 }

@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as mix;
+
+.nav {
+    @include mix.mediaQuery(tabletLandscape) {
+        @at-root .nav__menu {
+            display: flex;
+        }
+
+        @at-root .nav__menu-toggle {
+            display: none;
+        }
+    }
+}
