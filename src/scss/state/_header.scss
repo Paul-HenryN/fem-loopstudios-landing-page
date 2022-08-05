@@ -6,9 +6,10 @@
         align-items: flex-start;
 
         padding: 4em 10%;
+        row-gap: 7em;
 
         @at-root .header__card {
-            max-width: 43rem;
+            max-width: 42rem;
         }
     }
 }

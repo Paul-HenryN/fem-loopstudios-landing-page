@@ -123,7 +123,7 @@ h3 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
-  row-gap: 10em;
+  row-gap: 11em;
   background-image: url("../../../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,9 +199,10 @@ h3 {
     background-image: url("../../../images/desktop/image-hero.jpg");
     align-items: flex-start;
     padding: 4em 10%;
+    row-gap: 7em;
   }
   .header__card {
-    max-width: 43rem;
+    max-width: 42rem;
   }
 }
 
