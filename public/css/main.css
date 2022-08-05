@@ -131,6 +131,17 @@ h3 {
   padding: 2em 5%;
 }
 
+.nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__menu {
+  display: none;
+}
+
 .header {
   height: 80vh;
 }
