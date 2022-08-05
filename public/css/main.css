@@ -161,6 +161,17 @@ h3 {
   border: 2px solid currentColor;
 }
 
+@media (min-width: 769px) {
+  .header {
+    background-image: url("../../../images/desktop/image-hero.jpg");
+    align-items: flex-start;
+    padding: 4em 8%;
+  }
+  .header__card {
+    max-width: 43rem;
+  }
+}
+
 .header {
   height: 80vh;
 }

@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as mix;
+
+.header {
+    @include mix.mediaQuery(tabletPortrait) {
+        background-image: url("../../../images/desktop/image-hero.jpg");
+        align-items: flex-start;
+
+        padding: 4em 8%;
+
+        @at-root .header__card {
+            max-width: 43rem;
+        }
+    }
+}
