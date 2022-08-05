@@ -3,6 +3,7 @@
 
 .header {
     @include mix.flexCol(center, flex-start);
+    row-gap: 10em;
     background-image: url("../../../images/mobile/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;

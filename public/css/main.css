@@ -124,6 +124,7 @@ h3 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
+  row-gap: 10em;
   background-image: url("../../../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
