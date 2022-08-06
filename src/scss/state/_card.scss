@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as var;
+
+.card {
+    @at-root &_bg_img:hover {
+        color: var.$clr-primary-dark;
+
+        &::before {
+            background-image: none;
+            background-color: white;
+        }
+    }
+}

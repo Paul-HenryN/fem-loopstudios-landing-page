@@ -296,6 +296,14 @@ h3 {
   transform: scaleX(5);
 }
 
+.card_bg_img:hover {
+  color: hsl(0deg, 0%, 0%);
+}
+.card_bg_img:hover::before {
+  background-image: none;
+  background-color: white;
+}
+
 .btn_primary:hover, .btn_primary:focus-visible {
   background-color: hsl(0deg, 0%, 0%);
   color: hsl(0deg, 0%, 100%);
