@@ -1,15 +1,29 @@
 @use "../abstracts/variables" as var;
 
 .card {
-    padding: 1.3em 1.5em;
+  @at-root &_txt_light {
+    color: var.$clr-primary-light;
+  }
+  @at-root &_txt_dark {
+    color: var.$clr-neutral-mid;
+  }
 
-    @at-root &_txt-light {
-        color: var.$clr-primary-light;
-    }
-    @at-root &_txt-dark {
-        color: var.$clr-primary-dark;
-    }
-    @at-root &_bordered {
-        border: 2px solid currentColor;
-    }
+  @at-root &_bg_light {
+    background-color: var.$clr-primary-light;
+  }
+  @at-root &_bg_img {
+    background-image: url("../../../images/mobile/image-deep-earth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @at-root &_bordered {
+    border: 2px solid currentColor;
+  }
+
+  @at-root &_pd_s {
+    padding: 1.3em 1.5em;
+  }
+  @at-root &_pd_lg {
+    padding: 1.5em 1.6em;
+  }
 }

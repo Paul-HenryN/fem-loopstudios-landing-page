@@ -15,7 +15,7 @@ $font-families: (
 );
 $font-sizes: (
   s1: clamp(2.6rem, 10vw ,4.5rem),
-  s2: 1.3rem,
+  s2: 2rem,
   s3: 1rem,
   neutral: 0.9375rem,
 );
@@ -29,7 +29,7 @@ $font-weights: (
 ---------------------------------*/
 $breakpoints: (
   phone: 375px,
-  tabletPortrait: 769px,
+  tabletPortrait: 811px,
   tabletLandscape: 1024px,
   laptop: 1280px,
 );

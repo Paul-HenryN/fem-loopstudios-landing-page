@@ -1,4 +1,9 @@
-@use "./abstracts/mixins";
+@use "./abstracts/mixins" as mix;
+
+body {
+    @include mix.flexCol(center, center);
+    row-gap: 5rem;
+}
 
 .header {
     height: 80vh;

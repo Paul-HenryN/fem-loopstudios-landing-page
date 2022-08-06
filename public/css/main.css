@@ -100,18 +100,18 @@ h2,
 h3 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  color: inherit;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 h1 {
   font-size: clamp(2.6rem, 10vw, 4.5rem);
-  text-transform: uppercase;
   text-align: start;
-  line-height: 1;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 0%);
 }
 
 h3 {
@@ -179,22 +179,46 @@ h3 {
   display: none;
 }
 
-.card {
-  padding: 1.3em 1.5em;
-}
-.card_txt-light {
+.card_txt_light {
   color: hsl(0deg, 0%, 100%);
 }
 
-.card_txt-dark {
-  color: hsl(0deg, 0%, 0%);
+.card_txt_dark {
+  color: hsl(0deg, 0%, 55%);
+}
+
+.card_bg_light {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.card_bg_img {
+  background-image: url("../../../images/mobile/image-deep-earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_bordered {
   border: 2px solid currentColor;
 }
 
-@media (min-width: 769px) {
+.card_pd_s {
+  padding: 1.3em 1.5em;
+}
+
+.card_pd_lg {
+  padding: 1.5em 1.6em;
+}
+
+.main {
+  padding: 2em 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5em;
+}
+
+@media (min-width: 811px) {
   .header {
     background-image: url("../../../images/desktop/image-hero.jpg");
     align-items: flex-start;
@@ -218,6 +242,14 @@ h3 {
 .menu__item:hover::after {
   background-color: currentColor;
   transform: scaleX(5);
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5rem;
 }
 
 .header {

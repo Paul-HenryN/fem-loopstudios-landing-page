@@ -1,0 +1,7 @@
+@use "../abstracts/mixins" as mix;
+
+.main {
+    padding: 2em 5%;
+    @include mix.flexCol(center, center);
+    row-gap: 5em;
+}

@@ -35,17 +35,16 @@
     <header class="header">
       <nav class="nav">
         <a href="#" class="nav__logo">
-          <img
-            src="./images/logo.svg"
-            alt="Loopstudios' logo"
-          />
+          <img src="./images/logo.svg" alt="Loopstudios' logo" />
         </a>
 
         <ul role="list" class="menu nav__menu">
           <li class="menu__item"><a href="#" class="menu__link">About</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Careers</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Events</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Products</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Products</a>
+          </li>
           <li class="menu__item"><a href="#" class="menu__link">Support</a></li>
         </ul>
 
@@ -54,17 +53,75 @@
         </button>
       </nav>
 
-      <div class="card card_txt-light card_bordered header__card">
-        <h1>Immersive experiences that deliver</h1>
+      <div class="card card_txt_light card_bordered card_pd_s header__card">
+        <h1 class="card__title">Immersive experiences that deliver</h1>
       </div>
     </header>
 
-    The leader in interactive VR Founded in 2011, Loopstudios has been producing
-    world-class virtual reality projects for some of the best companies around
-    the globe. Our award-winning creations have transformed businesses through
-    digital experiences that bind to their brand. Our creations See all Deep
-    earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
-    The curiosity Make it fisheye About Careers Events Products Support © 2021
-    Loopstudios. All rights reserved.
+    <main class="main">
+      <section class="main__section">
+        <picture class="intro__hero">
+          <source
+            media="(max-width:769px)"
+            srcset="./images/mobile/image-interactive.jpg"
+            alt=""
+          />
+
+          <img src="./images/desktop/image-interactive.jpg" alt="" />
+        </picture>
+
+        <div class="card card_txt_dark card_bg_light card_pd_lg">
+          <h2 class="card__title">The leader in interactive VR</h2>
+
+          <p class="card__txt">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+
+      <section class="main__section">
+        <div class="grid">
+          <h2 class="grid__item">Our creations</h2>
+
+          <a href="#" class="grid__item">
+            <div class="card card_txt_light card_bg_img card_pd_s">
+              <h3>Deep earth</h3>
+            </div> </a
+          ><a href="#" class="grid__item">
+            <div class="card card_txt_light card_bg_img card_pd_s">
+              <h3>Night arcade</h3>
+            </div> </a
+          ><a href="#" class="grid__item">
+            <div class="card card_txt_light card_bg_img card_pd_s">
+              <h3>The grid</h3>
+            </div> </a
+          ><a href="#" class="grid__item">
+            <div class="card card_txt_light card_bg_img card_pd_s">
+              <h3>From up above vr</h3>
+            </div> </a
+          ><a href="#" class="grid__item">
+            <div class="card card_txt_light card_bg_img card_pd_s">
+              <h3>Pocket borealis</h3>
+            </div> </a
+          ><a href="#" class="grid__item">
+            <div class="card card_txt_light card_bg_img card_pd_s">
+              <h3>The curiosity</h3>
+            </div> </a
+          ><a href="#" class="grid__item">
+            <div class="card card_txt_light card_bg_img card_pd_s">
+              <h3>Make it fisheye</h3>
+            </div>
+          </a>
+
+          <a href="#" class="btn btn_primary grid__item">See all</a>
+        </div>
+      </section>
+    </main>
+
+    See all About Careers Events Products Support © 2021 Loopstudios. All rights
+    reserved.
   </body>
 </html>
