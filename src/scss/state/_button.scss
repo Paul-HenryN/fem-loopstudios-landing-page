@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as var;
+
+.btn {
+  @at-root &_primary:hover,
+    &_primary:focus-visible {
+    background-color: var.$clr-primary-dark;
+    color: var.$clr-primary-light;
+  }
+}

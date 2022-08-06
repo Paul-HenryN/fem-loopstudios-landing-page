@@ -290,9 +290,15 @@ h3 {
   }
 }
 
-.menu__item:hover::after {
+.menu__item:hover::after,
+.menu__item:focus::after {
   background-color: currentColor;
   transform: scaleX(5);
+}
+
+.btn_primary:hover, .btn_primary:focus-visible {
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 body {

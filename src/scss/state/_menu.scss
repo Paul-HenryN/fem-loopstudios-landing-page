@@ -1,4 +1,5 @@
-.menu__item:hover::after {
+.menu__item:hover::after,
+.menu__item:focus::after {
     background-color: currentColor;
     transform: scaleX(5);
 }
