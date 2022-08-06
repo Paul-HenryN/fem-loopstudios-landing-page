@@ -112,10 +112,11 @@ h1 {
 h2 {
   font-size: 2rem;
   color: hsl(0deg, 0%, 0%);
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -123,6 +124,7 @@ h3 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
+  width: 100%;
   row-gap: 11em;
   background-image: url("../../../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
@@ -179,6 +181,16 @@ h3 {
   display: none;
 }
 
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.card__title {
+  z-index: 10;
+}
+
 .card_txt_light {
   color: hsl(0deg, 0%, 100%);
 }
@@ -192,9 +204,18 @@ h3 {
 }
 
 .card_bg_img {
-  background-image: url("../../../images/mobile/image-deep-earth.jpg");
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.card_bg_img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right, black, transparent);
+  opacity: 0.8;
 }
 
 .card_bordered {
@@ -206,7 +227,7 @@ h3 {
 }
 
 .card_pd_lg {
-  padding: 1.5em 1.6em;
+  padding: 3em 1.6em;
 }
 
 .main {
@@ -215,7 +236,27 @@ h3 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  row-gap: 5em;
+  row-gap: 3rem;
+}
+.main__section {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  row-gap: 2rem;
+}
+.grid__item {
+  text-decoration: none;
+}
+
+.grid__card {
+  height: 8rem;
+}
+.grid__card .card__title {
+  max-width: 8rem;
+  text-align: start;
 }
 
 @media (min-width: 811px) {
@@ -249,7 +290,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  row-gap: 5rem;
+  row-gap: 4rem;
 }
 
 .header {

@@ -25,6 +25,7 @@ h1 {
 h2 {
   font-size: map-get($map: var.$font-sizes, $key: s2);
   color: var.$clr-primary-dark;
+  margin-bottom: 1.5rem;
 }
 h3 {
   font-size: map-get($map: var.$font-sizes, $key: s3);

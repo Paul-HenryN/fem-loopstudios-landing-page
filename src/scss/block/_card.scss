@@ -1,6 +1,13 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 
 .card {
+  @include mix.flexCol(center, center);
+
+  @at-root &__title {
+    z-index: 10;
+  }
+
   @at-root &_txt_light {
     color: var.$clr-primary-light;
   }
@@ -12,9 +19,20 @@
     background-color: var.$clr-primary-light;
   }
   @at-root &_bg_img {
-    background-image: url("../../../images/mobile/image-deep-earth.jpg");
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    // Overlay
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(to right, black, transparent);
+      opacity: 0.8;
+    }
   }
   @at-root &_bordered {
     border: 2px solid currentColor;
@@ -24,6 +42,6 @@
     padding: 1.3em 1.5em;
   }
   @at-root &_pd_lg {
-    padding: 1.5em 1.6em;
+    padding: 3em 1.6em;
   }
 }
