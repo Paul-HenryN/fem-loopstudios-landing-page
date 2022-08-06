@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as var;
+
+.btn {
+    padding: 0.5em 2em;
+
+    @at-root &_primary {
+        color: var.$clr-primary-dark;
+        text-transform: uppercase;
+        letter-spacing: 0.5ch;
+        border: 2px solid var.$clr-neutral-mid;
+    }
+}

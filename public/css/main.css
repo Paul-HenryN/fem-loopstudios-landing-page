@@ -259,6 +259,16 @@ h3 {
   text-align: start;
 }
 
+.btn {
+  padding: 0.5em 2em;
+}
+.btn_primary {
+  color: hsl(0deg, 0%, 0%);
+  text-transform: uppercase;
+  letter-spacing: 0.5ch;
+  border: 2px solid hsl(0deg, 0%, 55%);
+}
+
 @media (min-width: 811px) {
   .header {
     background-image: url("../../../images/desktop/image-hero.jpg");
