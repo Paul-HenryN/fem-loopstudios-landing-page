@@ -191,6 +191,14 @@ h3 {
   z-index: 10;
 }
 
+.card__body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
 .card_txt_light {
   color: hsl(0deg, 0%, 100%);
 }
@@ -242,6 +250,10 @@ h3 {
   width: 100%;
 }
 
+.main__card {
+  position: relative;
+}
+
 .grid {
   display: grid;
   grid-template-rows: repeat(10, auto);
@@ -270,6 +282,12 @@ h3 {
 }
 
 @media (min-width: 811px) {
+  body {
+    text-align: start;
+  }
+}
+
+@media (min-width: 811px) {
   .header {
     background-image: url("../../../images/desktop/image-hero.jpg");
     align-items: flex-start;
@@ -278,6 +296,26 @@ h3 {
   }
   .header__card {
     max-width: 42rem;
+  }
+}
+
+@media (min-width: 811px) {
+  .main__card {
+    flex-direction: row;
+    align-items: strecth;
+    justify-content: stretch;
+  }
+  .main__card .card__img {
+    flex: 1.5;
+  }
+  .main__card .card__body {
+    flex: 1;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 811px) {
+  .main {
+    padding: 4em 10%;
   }
 }
 
@@ -302,6 +340,12 @@ h3 {
 .card_bg_img:hover::before {
   background-image: none;
   background-color: white;
+}
+
+@media (min-width: 811px) {
+  .card_pd_lg {
+    padding: 5em 4em;
+  }
 }
 
 .btn_primary:hover, .btn_primary:focus-visible {

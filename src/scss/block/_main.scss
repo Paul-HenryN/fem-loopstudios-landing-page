@@ -8,4 +8,8 @@
     @at-root &__section {
         width: 100%;
     }
+
+    @at-root &__card {
+        position: relative;
+    }
 }

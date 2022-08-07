@@ -8,6 +8,11 @@
     z-index: 10;
   }
 
+  @at-root &__body {
+    @include mix.flexCol(center, center);
+    background-color: var.$clr-primary-light;
+  }
+
   @at-root &_txt_light {
     color: var.$clr-primary-light;
   }

@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 
 .card {
     @at-root &_bg_img:hover {
@@ -7,6 +8,12 @@
         &::before {
             background-image: none;
             background-color: white;
+        }
+    }
+
+    @at-root &_pd_lg {
+        @include mix.mediaQuery(tabletPortrait) {
+            padding: 5em 4em;
         }
     }
 }

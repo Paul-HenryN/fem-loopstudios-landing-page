@@ -1,0 +1,7 @@
+@use "../abstracts/mixins" as mix;
+
+body {
+    @include mix.mediaQuery(tabletPortrait) {
+        text-align: start;
+    }
+}
