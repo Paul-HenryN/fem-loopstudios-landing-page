@@ -2,6 +2,7 @@
 
 .btn {
     padding: 0.5em 2em;
+    text-align: center;
 
     @at-root &_primary {
         color: var.$clr-primary-dark;

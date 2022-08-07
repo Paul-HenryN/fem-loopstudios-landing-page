@@ -257,14 +257,16 @@ h3 {
 .grid {
   display: grid;
   grid-template-rows: repeat(10, auto);
-  row-gap: 2rem;
+  gap: 2rem;
 }
 .grid__item {
   text-decoration: none;
+  order: var(--order);
 }
 
 .grid__card {
   height: 8rem;
+  background-image: var(--bg-mobile);
 }
 .grid__card .card__title {
   max-width: 8rem;
@@ -273,6 +275,7 @@ h3 {
 
 .btn {
   padding: 0.5em 2em;
+  text-align: center;
 }
 .btn_primary {
   color: hsl(0deg, 0%, 0%);
@@ -300,6 +303,9 @@ h3 {
 }
 
 @media (min-width: 811px) {
+  .main {
+    padding: 4em 10%;
+  }
   .main__card {
     flex-direction: row;
     align-items: strecth;
@@ -313,9 +319,9 @@ h3 {
     align-items: flex-start;
   }
 }
-@media (min-width: 811px) {
+@media (min-width: 1024px) {
   .main {
-    padding: 4em 10%;
+    row-gap: 10rem;
   }
 }
 
@@ -351,6 +357,23 @@ h3 {
 .btn_primary:hover, .btn_primary:focus-visible {
   background-color: hsl(0deg, 0%, 0%);
   color: hsl(0deg, 0%, 100%);
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+  .grid__item:nth-child(1), .grid__item:last-child {
+    grid-column: span 2;
+  }
+  .grid__item:last-child {
+    order: 0;
+  }
+  .grid__card {
+    height: 25rem;
+    background-image: var(--bg-desktop);
+  }
 }
 
 body {

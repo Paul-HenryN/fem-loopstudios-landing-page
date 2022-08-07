@@ -1,8 +1,8 @@
 @use "../abstracts/mixins" as mix;
 
 .main {
-  &__card {
-    @include mix.mediaQuery(tabletPortrait) {
+  @include mix.mediaQuery(tabletPortrait) {
+    &__card {
       flex-direction: row;
       align-items: strecth;
       justify-content: stretch;
@@ -18,9 +18,11 @@
         // top: 100px;
       }
     }
+
+    padding: 4em 10%;
   }
 
-  @include mix.mediaQuery(tabletPortrait) {
-    padding: 4em 10%;
+  @include mix.mediaQuery(tabletLandscape) {
+    row-gap: 10rem;
   }
 }
