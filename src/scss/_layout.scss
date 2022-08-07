@@ -4,7 +4,3 @@ body {
     @include mix.flexCol(center, center);
     row-gap: 4rem;
 }
-
-.header {
-    height: 80vh;
-}

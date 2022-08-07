@@ -4,6 +4,7 @@
     padding: 2em 5%;
     @include mix.flexCol(center, center);
     row-gap: 3rem;
+    width: 100%;
 
     @at-root &__section {
         width: 100%;

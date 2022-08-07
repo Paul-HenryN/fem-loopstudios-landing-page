@@ -15,7 +15,7 @@ $font-families: (
 );
 $font-sizes: (
   s1: clamp(2.6rem, 10vw ,4.5rem),
-  s2: 2rem,
+  s2: clamp(2rem, 5vw, 2.5rem),
   s3: 1.5rem,
   neutral: 0.9375rem,
 );

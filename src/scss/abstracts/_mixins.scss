@@ -6,12 +6,6 @@
   }
 }
 
-@mixin mediaQueryWithOrientation($size, $orientation) {
-  @media (min-width: map-get(var.$breakpoints, $size)) {
-    @content;
-  }
-}
-
 @mixin flexRow($alignItems, $justContent) {
   display: flex;
   flex-flow: row nowrap;

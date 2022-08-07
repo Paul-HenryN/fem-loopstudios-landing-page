@@ -1,28 +1,23 @@
 @use "../abstracts/mixins" as mix;
 
 .main {
-  @include mix.mediaQuery(tabletPortrait) {
+  @include mix.mediaQuery(tabletLandscape) {
     &__card {
       flex-direction: row;
       align-items: strecth;
-      justify-content: stretch;
+      justify-content: flex-start;
+      width: 100%;
 
-      .card__img {
-        flex: 1.5;
-      }
       .card__body {
-        flex: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
         align-items: flex-start;
-        // position: relative;
-        // right: 15%;
-        // top: 100px;
+        width: 500px;
       }
     }
 
     padding: 4em 10%;
-  }
-
-  @include mix.mediaQuery(tabletLandscape) {
-    row-gap: 5rem;
+    row-gap: 9rem;
   }
 }

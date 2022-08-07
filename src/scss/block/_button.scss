@@ -1,8 +1,9 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 
 .btn {
     padding: 0.5em 2em;
-    text-align: center;
+    @include mix.flexCol(center, center);
 
     @at-root &_primary {
         color: var.$clr-primary-dark;
