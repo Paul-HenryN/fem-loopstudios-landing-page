@@ -315,6 +315,41 @@ h3 {
   column-gap: 15px;
 }
 
+.sidebar {
+  background-color: hsl(0deg, 0%, 0%);
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  padding: 2rem 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 10rem;
+  display: none;
+}
+.sidebar__header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sidebar__menu {
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.sidebar__logo {
+  width: clamp(2rem, 40%, 10rem);
+}
+
 @media (min-width: 811px) {
   body {
     text-align: start;
@@ -416,6 +451,7 @@ h3 {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

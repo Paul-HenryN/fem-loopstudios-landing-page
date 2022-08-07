@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.sidebar {
+    background-color: var.$clr-primary-dark;
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    padding: 2rem 5%;
+
+    @include mix.flexCol(flex-start, flex-start); 
+
+    @at-root &__header {
+        @include mix.flexRow(center, space-between);
+        width: 100%;
+    }
+
+    @at-root &__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 0.5rem;
+        text-transform: uppercase;
+        font-family: map-get($map: var.$font-families, $key: primary);
+        font-weight: map-get($map: var.$font-weights, $key: primary);
+        font-size: map-get($map: var.$font-sizes, $key: s3);
+
+    }
+
+    @at-root &__logo {
+        width: clamp(2rem, 40%, 10rem);
+    }
+
+    row-gap: 10rem;
+
+    display: none;
+}
