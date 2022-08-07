@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as mix;
+
+.footer {
+    @include mix.mediaQuery(tabletLandscape) {
+        grid-template-columns: repeat(2, 50%);
+        place-items: start;
+    
+        @at-root &__menu {
+            flex-direction: row;
+            --order: 0 !important;
+        }
+    }
+}

@@ -292,7 +292,10 @@ h3 {
   display: grid;
   place-items: center;
   row-gap: 2rem;
-  padding: 2em 5%;
+  padding: 4rem 5%;
+}
+.footer > * {
+  order: var(--order);
 }
 .footer__menu {
   flex-direction: column;
@@ -396,6 +399,17 @@ h3 {
   .grid__card {
     height: 25rem;
     background-image: var(--bg-desktop);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-columns: repeat(2, 50%);
+    place-items: start;
+  }
+  .footer__menu {
+    flex-direction: row;
+    --order: 0 !important;
   }
 }
 
