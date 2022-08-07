@@ -23,6 +23,6 @@
   }
 
   @include mix.mediaQuery(tabletLandscape) {
-    row-gap: 10rem;
+    row-gap: 5rem;
   }
 }

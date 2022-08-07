@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.footer {
+    width: 100%;
+    background-color: var.$clr-primary-dark;
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+    padding: 2em 5%;
+
+    @at-root &__menu {
+        flex-direction: column;
+        row-gap: 0.9rem;
+    }
+
+    @at-root &__social {
+        @include mix.flexRow(center, center);
+        column-gap: 15px;
+    }
+}
