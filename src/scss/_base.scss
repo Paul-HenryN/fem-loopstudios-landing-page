@@ -9,6 +9,11 @@ body {
   text-align: center;
 }
 
+::selection {
+  background-color: var.$clr-primary-dark;
+  color: var.$clr-primary-light;
+}
+
 h1,
 h2,
 h3 {

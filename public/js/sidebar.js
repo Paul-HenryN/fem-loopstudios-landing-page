@@ -6,16 +6,21 @@ const sidebar = document.querySelector(".sidebar");
 console.log(sidebarOpenBtn);
 
 function openSideBar() {
-    sidebar.style.transform = "translateX(0)";
+  sidebar.style.transform = "translateX(0)";
+  sidebar.style.visibility = "visible";
 }
 
 function CloseSideBar() {
-    sidebar.style.transform = "translateX(100%)";
+  sidebar.style.transform = "translateX(100%)";
+
+  setTimeout(() => {
+    sidebar.style.visibility = "hidden";
+  }, 500);
 }
 
 function main() {
-    sidebarOpenBtn.onclick = openSideBar;
-    sidebarCloseBtn.onclick = CloseSideBar;
+  sidebarOpenBtn.onclick = openSideBar;
+  sidebarCloseBtn.onclick = CloseSideBar;
 }
 
 main();
