@@ -1,7 +1,8 @@
 @use "./abstracts/mixins" as mix;
 
-body {
+.container {
     position: relative;
     @include mix.flexCol(center, center);
     row-gap: 4rem;
+    overflow: hidden;
 }

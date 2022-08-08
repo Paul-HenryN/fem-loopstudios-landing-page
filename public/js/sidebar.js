@@ -6,11 +6,11 @@ const sidebar = document.querySelector(".sidebar");
 console.log(sidebarOpenBtn);
 
 function openSideBar() {
-    sidebar.style.display = "flex";
+    sidebar.style.transform = "translateX(0)";
 }
 
 function CloseSideBar() {
-    sidebar.style.display = "none";
+    sidebar.style.transform = "translateX(100%)";
 }
 
 function main() {

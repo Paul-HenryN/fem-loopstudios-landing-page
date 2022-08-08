@@ -1,24 +1,30 @@
 @use "../abstracts/mixins" as mix;
 
 .grid {
-    @include mix.mediaQuery(tabletLandscape) {
-        grid-template-columns: repeat(4, auto);
-        grid-template-rows: repeat(2, auto);
+  @include mix.mediaQuery(tabletLandscape) {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
 
-        @at-root &__item {
-            &:nth-child(1),
-            &:last-child {
-                grid-column: span 2;
-            }
+    @at-root &__item {
+      &:nth-child(1),
+      &:last-child {
+        grid-column: span 2;
+      }
 
-            &:last-child {
-                order: 0;
-            }
-        }
-
-        &__card {
-            height: 25rem;
-            background-image: var(--bg-desktop);
-        }
+      &:last-child {
+        order: 0;
+      }
     }
+
+    @at-root &__card {
+      height: 25rem;
+      background-image: var(--bg-desktop);
+    }
+  }
+
+  @at-root &__card {
+    &:hover {
+        transform: scale(1.05);
+      }
+  }
 }

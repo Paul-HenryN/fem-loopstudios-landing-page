@@ -63,6 +63,7 @@ select {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -271,6 +272,7 @@ h3 {
 .grid__card {
   height: 8rem;
   background-image: var(--bg-mobile);
+  transition: transform 200ms ease;
 }
 .grid__card .card__title {
   max-width: 8rem;
@@ -326,7 +328,8 @@ h3 {
   align-items: flex-start;
   justify-content: flex-start;
   row-gap: 10rem;
-  display: none;
+  transform: translateX(100%);
+  transition: transform 500ms ease;
 }
 .sidebar__header {
   display: flex;
@@ -347,7 +350,7 @@ h3 {
 }
 
 .sidebar__logo {
-  width: clamp(2rem, 40%, 10rem);
+  width: clamp(7rem, 40%, 10rem);
 }
 
 @media (min-width: 811px) {
@@ -392,7 +395,7 @@ h3 {
   .nav__menu {
     display: flex;
   }
-  .nav__menu-toggle {
+  .nav__toggle {
     display: none;
   }
 }
@@ -438,6 +441,9 @@ h3 {
     background-image: var(--bg-desktop);
   }
 }
+.grid__card:hover {
+  transform: scale(1.05);
+}
 
 @media (min-width: 1024px) {
   .footer {
@@ -450,13 +456,14 @@ h3 {
   }
 }
 
-body {
+.container {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   row-gap: 4rem;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
