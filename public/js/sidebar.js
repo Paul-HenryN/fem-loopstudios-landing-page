@@ -21,6 +21,7 @@ function CloseSideBar() {
 function main() {
   sidebarOpenBtn.onclick = openSideBar;
   sidebarCloseBtn.onclick = CloseSideBar;
+  console.log($(".container"));
 }
 
 main();
