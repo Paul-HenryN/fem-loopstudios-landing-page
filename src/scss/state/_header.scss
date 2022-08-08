@@ -2,7 +2,7 @@
 
 .header {
     @include mix.mediaQuery(tabletPortrait) {
-        background-image: url("../../../images/desktop/image-hero.jpg");
+        background-image: var(--bg-desktop);
         align-items: flex-start;
 
         padding: 4em 10%;

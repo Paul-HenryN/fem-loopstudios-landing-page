@@ -5,7 +5,7 @@
     @include mix.flexCol(center, flex-start);
     width: 100%;
     row-gap: 11em;
-    background-image: url("../../images/mobile/ia.jpg");
+    background-image: var(--bg-mobile);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2em 5%;
